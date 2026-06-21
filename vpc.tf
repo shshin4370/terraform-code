@@ -40,26 +40,26 @@ resource "aws_subnet" "frodo_public02" {
   }
 }
 
-# =========================================================
-# Private Subnets
-# =========================================================
+# # =========================================================
+# # Private Subnets
+# # =========================================================
 
-resource "aws_subnet" "frodo_private01" {
-  vpc_id            = aws_vpc.frodo_vpc.id
-  cidr_block        = "172.16.100.0/24"
-  availability_zone = "ap-northeast-2a"
+# resource "aws_subnet" "frodo_private01" {
+#   vpc_id            = aws_vpc.frodo_vpc.id
+#   cidr_block        = "172.16.100.0/24"
+#   availability_zone = "ap-northeast-2a"
 
-  tags = {
-    Name = "frodo-private01"
-  }
-}
+#   tags = {
+#     Name = "frodo-private01"
+#   }
+# }
 
-resource "aws_subnet" "frodo_private02" {
-  vpc_id            = aws_vpc.frodo_vpc.id
-  cidr_block        = "172.16.110.0/24"
-  availability_zone = "ap-northeast-2c"
+# resource "aws_subnet" "frodo_private02" {
+#   vpc_id            = aws_vpc.frodo_vpc.id
+#   cidr_block        = "172.16.110.0/24"
+#   availability_zone = "ap-northeast-2c"
 
-  tags = {
-    Name = "frodo-private02"
-  }
-}
+#   tags = {
+#     Name = "frodo-private02"
+#   }
+# }
