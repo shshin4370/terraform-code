@@ -6,6 +6,7 @@ on:
       - main
     paths-ignore:
       - ".github/workflows/*"
+      - ".gitignore"
 
 env:
   AWS_REGION: ap-northeast-2
